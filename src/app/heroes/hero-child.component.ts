@@ -9,5 +9,4 @@ import { Hero } from '.././heroes/hero'
 export class HeroChildComponent{
   @Input() hero: Hero;
   @Input('master') masterName: string;
-
 }

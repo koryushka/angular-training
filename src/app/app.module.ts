@@ -8,13 +8,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module'
 
 import { HeroParentComponent } from './heroes/hero-parent.component';
-import { HeroChildComponent } from './heroes/hero-child.component'
-
+import { HeroChildComponent } from './heroes/hero-child.component';
+import { NameParentComponent } from './names/name-parent.component';
+import { NameChildComponent } from './names/name-child.component';
+import { VersionParentComponent } from './versions/version-parent.component';
+import { VersionChildComponent } from './versions/version-child.component';
 
 let directives: any[] = [
   AppComponent,
   HeroParentComponent,
-  HeroChildComponent
+  HeroChildComponent,
+  NameParentComponent,
+  NameChildComponent,
+  VersionParentComponent,
+  VersionChildComponent
 ]
 
 @NgModule({
