@@ -5,15 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AppRoutingModule } from './app-routing.module'
+
+import { HeroParentComponent } from './heroes/hero-parent.component';
+import { HeroChildComponent } from './heroes/hero-child.component'
+
+
+let directives: any[] = [
+  AppComponent,
+  HeroParentComponent,
+  HeroChildComponent
+]
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
+  declarations: directives,
   providers: [],
   bootstrap: [AppComponent]
 })
