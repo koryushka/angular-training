@@ -13,6 +13,14 @@ import { NameParentComponent } from './names/name-parent.component';
 import { NameChildComponent } from './names/name-child.component';
 import { VersionParentComponent } from './versions/version-parent.component';
 import { VersionChildComponent } from './versions/version-child.component';
+import { VoteTakerComponent } from './votes/vote-taker.component';
+import { VoterComponent } from './votes/voter.component';
+import { CountdownLocalVarParentComponent } from './countdown/countdown-parent.component';
+import { CountdownViewChildParentComponent } from './countdown/countdown-parent.component';
+import { CountdownChildComponent } from './countdown/countdown-child.component';
+import { MissionControlComponent } from './missions/mission-control.component';
+import { AstronautComponent } from './missions/astronaut.component';
+
 
 let directives: any[] = [
   AppComponent,
@@ -21,7 +29,15 @@ let directives: any[] = [
   NameParentComponent,
   NameChildComponent,
   VersionParentComponent,
-  VersionChildComponent
+  VersionChildComponent,
+  VoteTakerComponent,
+  VoterComponent,
+  CountdownLocalVarParentComponent,
+  CountdownViewChildParentComponent,
+  CountdownChildComponent,
+  MissionControlComponent,
+  AstronautComponent
+
 ]
 
 @NgModule({

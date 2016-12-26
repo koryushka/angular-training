@@ -1,0 +1,8 @@
+<h1>Missions</h1>
+<button (click)='announce();'>Announce mission</button>
+<astronaut *ngFor='let astronaut of astronauts'
+            [astronaut]='astronaut'></astronaut>
+<h3>History</h3>
+<ul>
+  <li *ngFor="let event of history">{{event}}</li>
+</ul>

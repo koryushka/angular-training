@@ -1,0 +1,7 @@
+<h1>Voters</h1>
+<h2>Agreed: {{agreed}}</h2>
+<h2>Disagreed: {{disagreed}}</h2>
+<voter *ngFor='let v of voters'
+        [voter]='v'
+        (onVoteInVoter)="onVoteInVoteTaker($event)"
+></voter>
